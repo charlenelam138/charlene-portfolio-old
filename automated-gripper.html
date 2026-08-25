@@ -3,47 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Automated Gripper | Lyndra Therapeutics | Charlene Lam</title>
+<title>Automated Gripper | Charlene Lam</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-top">
-    <a href="index.html" class="wordmark">CHARLENE
-      <span class="tagline">designer | mechanical engineer | creative</span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-    <nav class="main-nav">
+    <nav class="nav-left">
       <a href="engineering.html">Engineering</a>
       <a href="design.html">Design</a>
       <a href="art.html">Art</a>
       <a href="photography.html">Photography</a>
       <a href="about.html">About</a>
     </nav>
-  </div>
-  <div class="header-links">
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="index.html" class="wordmark">CHARLENE
+      <span class="tagline">designer | mechanical engineer | creative</span>
+    </a>
+    <nav class="nav-right">
+      <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="https://www.linkedin.com/in/charlene-lam/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="mailto:charlenelam138@gmail.com">Email</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
   </div>
 </header>
 
-<main class="wrap" style="padding-top:50px; padding-bottom:90px;">
-  <p style="font-size:12px; letter-spacing:.1em; text-transform:uppercase;">
-    <a href="engineering.html">&larr; Back to Engineering</a>
-  </p>
+<main class="wrap case-main">
+  <a class="case-back" href="engineering.html">&larr; Back to Engineering</a>
 
-  <h1 class="page-title" style="text-align:left; margin-left:0;">Automated Gripper | Lyndra Therapeutics</h1>
+  <div class="case-header">
+    <h1>Automated Gripper</h1>
+    <p class="case-meta">Lyndra Therapeutics</p>
+  </div>
 
-  <img src="https://static.wixstatic.com/media/55147f_9126543b61344d5ab8980686f39fc33c~mv2.png" alt="Automated Gripper | Lyndra Therapeutics" style="width:100%; margin-bottom:32px;">
+  <div style="max-width:400px; margin: 0 auto 10px;">
+    <img class="case-hero-img" src="https://static.wixstatic.com/media/55147f_aca00f6abb074de79e7585008d33cc7b~mv2.png" alt="Automated Gripper machine" style="margin-bottom:0;">
+  </div>
 
-  <div style="max-width:720px;">
-    <p style="color:#333; font-size:15px;">
-      This case study is still being written up &mdash; drop in the project write-up, process
-      photos, and any renders or CAD screenshots here. Swap this paragraph and the image above
-      for the real content whenever it's ready.
-    </p>
+  <div class="case-section">
+    <ul>
+      <li>Scoped and designed a mechanism to transfer parts relating to a drug platform in efforts of future commercialization</li>
+      <li>Led engineering team-wide brainstorms and design reviews to generate feedback for an iterative design process</li>
+      <li>Utilized SOLIDWORKS, FDM/SLA printing, shop tools, and wiring tools for prototyping</li>
+      <li>Developed a 130+ part assembly consisting of mechanical, electrical, and pneumatic subsystems</li>
+      <li>Presented at a company-wide poster session on the mechanism, built for R&amp;D toward commercialization efforts</li>
+    </ul>
+    <p class="case-skills"><strong>Skills:</strong> SOLIDWORKS, SLA/FDM 3D printing, Arduino IDE, electrical wiring, pneumatics</p>
+    <p class="case-note">Many details were censored or reworded to abide by NDA, specifically in the "Scoping the Project" and "Brainstorming" sections below.</p>
+  </div>
+
+  <div class="case-section">
+    <h2>Scoping the Project</h2>
+    <p>I first identified all requirements and constraints to ensure a comprehensive understanding of the project's boundaries and limitations, for designing and communicating with the team through future brainstorms and design reviews.</p>
+
+    <h3>Goal</h3>
+    <p>Design a mechanism to transfer parts relating to a drug platform in efforts of future commercialization.</p>
+
+    <h3>Requirements</h3>
+    <ul>
+      <li>Pick up parts at a required temperature</li>
+      <li>Pull up parts repeatably to decrease variability between operators</li>
+      <li>Ability to scale the system up for a commercial line, or down for a smaller R&amp;D system</li>
+      <li>Move parts at a throughput based on the current system</li>
+    </ul>
+
+    <h3>Constraints</h3>
+    <ul>
+      <li>Parts are delicate and cannot be damaged in the process</li>
+      <li>Must be compatible with current systems for testing</li>
+    </ul>
+
+    <h3>Reach Goals</h3>
+    <ul>
+      <li>Cooling system</li>
+      <li>Autonomous operation</li>
+      <li>Organization after pick-up</li>
+    </ul>
+  </div>
+
+  <div class="case-section">
+    <h2>Brainstorming</h2>
+    <p>I led and organized a brainstorming session with the engineering team, sharing the project's scope, background, and my initial thoughts. Together, we generated a stack of ideas.</p>
+    <p>I passed around paper and pens and allocated a 15-minute period to generate as many ideas as we could, then went around the group sharing concepts and building on each other's contributions.</p>
+    <p class="case-note">I can't share any of the ideas from the brainstorm, as they include sensitive information.</p>
+  </div>
+
+  <div class="case-section">
+    <h2>Weighted Design Matrix</h2>
+    <p>I filtered through all the ideas to identify 7 leading concepts, then ranked them on a weighted design matrix. Based on my own criteria for the project, the leading concept was a custom vacuum mechanism compatible for moving the specific parts.</p>
+    <p>Weighted evaluation criteria (5 = very important, 1 = unimportant): simplicity of implementation, repeatability, scalability, compatibility, and part safety. Each idea was then rated against these criteria (5 = very good, 1 = very bad).</p>
+    <img src="https://static.wixstatic.com/media/55147f_5980049acfe04dc8b2bf22731628ac11~mv2.png" alt="Weighted design matrix" style="width:100%; max-width:600px; margin: 10px 0 20px; display:block;">
+  </div>
+
+  <div class="case-section">
+    <h2>Prototyping</h2>
+    <p>I designed and tested the leading concept: a custom vacuum head.</p>
+
+    <h3>Testing</h3>
+    <p>Iterated on different vacuum head designs in SOLIDWORKS and printed them with FormLabs Clear Resin, then tested prototypes by hand to see how well they lifted parts.</p>
+    <img src="https://static.wixstatic.com/media/55147f_66eb256fe50f4df8a955e2400f3e4673~mv2.jpg" alt="Vacuum head prototype" style="width:100%; max-width:340px; margin: 10px 0 20px; display:block;">
+
+    <h3>Final Prototype Design</h3>
+    <p class="case-note">Cannot show photos of different views.</p>
+    <img src="https://static.wixstatic.com/media/55147f_93fe1019ce564d80b36a9ed2521b41b5~mv2.png" alt="Final vacuum head section view showing alignment holes and airflow channels" style="width:100%; max-width:400px; margin: 10px 0 20px; display:block;">
+  </div>
+
+  <div class="case-section">
+    <h2>Build</h2>
+    <p>I built an R&amp;D mechanism to test the prototype using pneumatics, electrical wiring, and mechanical parts. Most mechanical parts were custom designed in SOLIDWORKS and tested with FDM and SLA printing.</p>
+
+    <h3>Pneumatic Diagram</h3>
+    <p>Components: 2 pressure regulators, 2 5/3 pneumatic valves, one 3/2 pneumatic valve, a venturi tube, double-acting cylinders, and custom vacuum heads.</p>
+    <a href="https://www.charlene-lam.com/_files/ugd/55147f_f5e2e5c2ba844369bc86ac8a9dc27881.pdf" target="_blank" rel="noopener">
+      <img src="https://static.wixstatic.com/media/55147f_d7fda95071e54124be4c76bcfefa5190~mv2.jpg" alt="LYNX Gripper pneumatic diagram" style="width:100%; max-width:500px; margin: 10px 0 6px; display:block;">
+    </a>
+    <p class="case-img-caption">Click to view full pneumatic diagram PDF</p>
+
+    <h3>Wiring Diagram</h3>
+    <p>Components: AC/DC power converter, terminal blocks, relay, and an Arduino board.</p>
+    <div class="case-img-row">
+      <img src="https://static.wixstatic.com/media/55147f_f258f6061a6e4ed5996e80c628ecfe65~mv2.jpg" alt="Wiring diagram">
+      <img src="https://static.wixstatic.com/media/55147f_2b461efa6f1c43c2a1fa1c86997d355f~mv2.jpg" alt="Fully wired Automated Gripper with open control box">
+    </div>
+    <p class="case-img-caption">Fully wired Automated Gripper with open control box, testing start button</p>
+
+    <h3>CAD &amp; Machine</h3>
+    <div class="case-img-row">
+      <img src="https://static.wixstatic.com/media/55147f_87cd3d2b76db4699ba2a1aeffdf5e389~mv2.png" alt="Gripper CAD model (blurred for NDA)">
+      <img src="https://static.wixstatic.com/media/55147f_aca00f6abb074de79e7585008d33cc7b~mv2.png" alt="Completed Automated Gripper machine">
+    </div>
+  </div>
+
+  <div class="case-section">
+    <h2>Testing</h2>
+    <p>After building the prototype, I tested it and compared it to my force calculations.</p>
+
+    <h3>Measuring the Force Required to Move Parts</h3>
+    <p>Created a force gauge fixture to measure the force required to pull parts up after a thermal process.</p>
+    <div class="case-img-row">
+      <img src="https://static.wixstatic.com/media/55147f_84b194ba9e504a618e632d56f0edabf9~mv2.png" alt="Force attachment fixture (blurred for NDA)">
+      <img src="https://static.wixstatic.com/media/55147f_c6e1c9fefe514ed5a3384ebe2305b5bc~mv2.png" alt="Force graph (blurred for NDA)">
+    </div>
+
+    <h3>Comparing Force Requirement to Vacuum Prototype</h3>
+    <ul>
+      <li>Split the vacuum into two airways to replicate the machine and attached the custom vacuum head</li>
+      <li>Placed calibration weights in a box requiring 3N of force to lift (average force required was 1.66N)</li>
+      <li>The vacuum successfully lifted the box &mdash; confirming it's strong enough to lift the actual parts</li>
+    </ul>
+    <div class="case-img-row">
+      <img src="https://static.wixstatic.com/media/55147f_f31d673c3ad0487bbf96f7616b9cd3c2~mv2.jpg" alt="Force testing setup">
+      <img src="https://static.wixstatic.com/media/55147f_944e154e4e2840d6a1c15da6f3f938b1~mv2.jpg" alt="Force testing setup">
+    </div>
+  </div>
+
+  <div class="case-section">
+    <h2>Evaluation</h2>
+    <p>Assessing the effectiveness of the Automated Gripper against the predefined project objectives: it met the pick-up, repeatability, scalability, and throughput requirements, while staying within the part-safety and system-compatibility constraints.</p>
+    <img src="https://static.wixstatic.com/media/55147f_3b5906d602744de3b6599302fa4212ec~mv2.jpg" alt="Presenting work at company poster session" style="width:100%; max-width:340px; margin: 10px 0 6px; display:block;">
+    <p class="case-img-caption">Presenting my work at an all-company poster session</p>
   </div>
 </main>
 

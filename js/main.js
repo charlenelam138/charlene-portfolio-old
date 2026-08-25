@@ -1,15 +1,17 @@
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".nav-toggle");
-  var nav = document.querySelector(".main-nav");
-  if (toggle && nav) {
+  var navs = document.querySelectorAll(".nav-left, .nav-right");
+  if (toggle && navs.length) {
     toggle.addEventListener("click", function () {
-      nav.classList.toggle("open");
+      navs.forEach(function (nav) {
+        nav.classList.toggle("open");
+      });
     });
   }
 
   // Lightbox for masonry photo galleries
-  var masonryImgs = document.querySelectorAll(".masonry img");
+  var masonryImgs = document.querySelectorAll(".masonry img, .case-gallery img");
   if (masonryImgs.length) {
     var lightbox = document.createElement("div");
     lightbox.className = "lightbox";
